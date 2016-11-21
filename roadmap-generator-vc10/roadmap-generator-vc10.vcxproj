@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C9F8FD9F-3FE6-485F-B688-744447877886}</ProjectGuid>
+    <RootNamespace>roadmapgeneratorvc10</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>..\..\..\Dev\Projects\temp\roadmap-generator\</IntDir>
+    <IncludePath>C:\Dev\Qt\4.8.2\include\QtGui;C:\Dev\Qt\4.8.2\include;C:\Dev\Qt\4.8.2\include\QtCore;C:\Dev\Qt\4.8.2\include\Qt;C:\Dev\CGAL43\auxiliary\gmp\include;C:\Dev\CGAL43\include;C:\Dev\boost_1_55_0;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <OutDir>..\..\..\Dev\Projects\temp\roadmap-generator\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>..\..\..\Dev\Projects\temp\</IntDir>
+    <IncludePath>C:\Dev\Qt\4.8.2\include\QtOpenGL;C:\Dev\Qt\4.8.2\include\QtGui;C:\Dev\Qt\4.8.2\include;C:\Dev\Qt\4.8.2\include\QtCore;C:\Dev\Qt\4.8.2\include\Qt;C:\Dev\CGAL43\auxiliary\gmp\include;C:\Dev\CGAL43\include;C:\Dev\boost_1_55_0;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <OutDir>..\..\..\Dev\Projects\temp\roadmap-generator\$(Configuration)\</OutDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Gorubi\605\win32\lib;C:\Dev\CGAL43\lib;C:\Dev\Qt\4.8.2\lib;C:\Dev\CGAL43\auxiliary\gmp\lib;C:\Dev\CGAL43\lib\Debug;C:\Dev\boost_1_55_0\lib32-msvc-10.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_system-vc100-mt-gd-1_55.lib;boost_thread-vc100-mt-gd-1_55.lib;QtOpenGLd4.lib;libgmp-10.lib;libmpfr-4.lib;QtGuid4.lib;QtCored4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Gorubi\605\win32\lib;C:\Dev\CGAL43\lib;C:\Dev\Qt\4.8.2\lib;C:\Dev\CGAL43\auxiliary\gmp\lib;C:\Dev\CGAL43\lib\Release;C:\Dev\boost_1_55_0\lib32-msvc-10.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_system-vc100-mt-1_55.lib;boost_thread-vc100-mt-1_55.lib;QtOpenGL4.lib;libgmp-10.lib;libmpfr-4.lib;QtGui4.lib;QtCore4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>moc.exe $(SolutionDir)/../main_window.h -o $(SolutionDir)/../main_window_moc.cpp</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\app.cpp" />
+    <ClCompile Include="..\helper_functions.cpp" />
+    <ClCompile Include="..\main_window.cpp" />
+    <ClCompile Include="..\roadmap.cpp" />
+    <ClCompile Include="..\shortest_path\visilibity.cpp" />
+    <ClCompile Include="..\vc10\main_window_moc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\graph.h" />
+    <ClInclude Include="..\graphics_item.h" />
+    <ClInclude Include="..\helper_functions.h" />
+    <ClInclude Include="..\main_window.h" />
+    <ClInclude Include="..\number_type.h" />
+    <ClInclude Include="..\roadmap.h" />
+    <ClInclude Include="..\shortest_path\visilibity.hpp" />
+    <ClInclude Include="..\types.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

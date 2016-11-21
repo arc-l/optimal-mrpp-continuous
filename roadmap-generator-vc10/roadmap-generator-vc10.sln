@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "roadmap-generator-vc10", "roadmap-generator-vc10.vcxproj", "{C9F8FD9F-3FE6-485F-B688-744447877886}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "make-moc", "make-moc.vcxproj", "{C81C3BB6-17F0-4B58-B109-8EE33FA13752}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9F8FD9F-3FE6-485F-B688-744447877886}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9F8FD9F-3FE6-485F-B688-744447877886}.Debug|Win32.Build.0 = Debug|Win32
+		{C9F8FD9F-3FE6-485F-B688-744447877886}.Release|Win32.ActiveCfg = Release|Win32
+		{C9F8FD9F-3FE6-485F-B688-744447877886}.Release|Win32.Build.0 = Release|Win32
+		{C81C3BB6-17F0-4B58-B109-8EE33FA13752}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C81C3BB6-17F0-4B58-B109-8EE33FA13752}.Debug|Win32.Build.0 = Debug|Win32
+		{C81C3BB6-17F0-4B58-B109-8EE33FA13752}.Release|Win32.ActiveCfg = Release|Win32
+		{C81C3BB6-17F0-4B58-B109-8EE33FA13752}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,5 +1,9 @@
 ###Optimal Multi-Robot Path Planning in 2D Continuous Domain
 
+
+![mrpp](https://user-images.githubusercontent.com/23622170/124700709-3129b680-debb-11eb-8e14-b9927f3b2cf3.png)
+
+
 Cross platform C++ source code used in the following work 
 
 J. Yu and D. Rus. An Effective Algorithmic Framework for Near Optimal Multi-Robot Path Planning. The 2015 International Symposium on Robotics Research (ISRR 2015).
